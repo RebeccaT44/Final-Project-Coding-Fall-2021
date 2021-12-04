@@ -1,0 +1,27 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Dinosaurs Ruled and Still Do{% endblock %}
+
+{% block page_description %}Information on Dinosaurs.{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Dinosaurs Ruled and Still Do</h1>
+  <p>People are fascinated by dinosaurs, and have been since the first fossils were discovered. There are Facebook groups dedicated to dinosaurs and loving them past childhood. Movies and video games and books and full digs both funded and not funded.</p>
+
+  <p>Dinosaurs aren't one size fits all, though. You have a plethora of categories for these giant (and tiny) lizards. The following pages are dedicated to the herbivores and carnivores of the Dino era.</p>
+  <h2>What is a Dinosaur?</h2>
+  <p>A dinosaur is a lizard like creature, though scientists don't know for sure whether they were scaled or feathered. They lived over 65 million years ago, a fact we should all be thankful for. After all, I for one know a few people I wouldn't mind feeding to a Tyrannosaurus Rex. There were dinosaurs that flew, like the pteradactyl, and those that swam, like the mosasaur. I mean, if you need a good example of all kinds look at the kids movie, The Land Before Time. Which leads to the next categories mentioned earlier: herbivores and carnivores. Did you know? The main characters of the movie are all herbivores?</p>
+  <div class="row">
+    {% for dino in dino.dinosaurs  %}
+      <div class="col">
+        <img src="img/{{ dino.slug }}.jpg" alt="" class="img-fluid">
+        <h3><a href="dino/{{ dino.slug }}.html">{{ dino.name }}</a></h3>
+      </div>
+    {% endfor %}
+  </div>
+  <h2>To Find Out More About Herbivores and Carnivores</h2>
+  <p>Click the images above: triceratops for herbivores, and T-Rex for carnivores! Or use the drop down menu in the top left that says "More Dinosaurs."</p>
+  <hr>
+</div>
+{% endblock %}

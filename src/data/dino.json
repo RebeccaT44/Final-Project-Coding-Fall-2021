@@ -1,0 +1,19 @@
+{
+    "dinosaurs": [
+    {
+    "name": "Herbivores",
+    "intro": "Ah, the herbivore. Plant eaters with flat teeth much like the modern horse. Some can even say theyre gentle giants.Sort of.Get in the way of these large creatures and their offspring, it could be life altering...err ending.",
+    "backgroundColor": "#E6E6FA",
+    "headers": "#0000FF",
+    "slug": "jurassic park.jpg",
+    "references": "For the images on this page, I pulled them from IMDB on Jurassic Park as well as Google."
+    },
+    { "name" : "Carnivores",
+      "intro": "Some of these carnivorous monarchs were larger than life, while others were itty bitty! The Tyrannosaurus Rex is supposedly the largest of them all, though recent fossils have been found that there could be a greater king. Compsognathus, referred to in Jurassic Park: The Lost World as Compies, are only reported to have been the size of turkeys.",
+      "backgroundColor": "#f3b0bb",
+      "headers": "#FF0000",
+      "slug": "Velociraptor.jpg",
+      "references": "For the image on this page, I used IMDB as a source, specifically from Jurassic Park."
+    }
+  ]
+}
